@@ -16,10 +16,20 @@
 ---
 
 # Установка и запуск проекта
-## Локально через Poetry
-```bash
+## 1. Получить кредиты от Google
+
+## 2. Запустить скрипт через...
+### ...Poetry
+```
 git clone https://github.com/kawunus/bsuir-shedule-parser.git
 cd bsuir-shedule-parser
 poetry install
 poetry run python main.py
+```
+
+### ...Docker
+```
+docker-compose build
+docker-compose up -d
+docker-compose logs -f
 ```
