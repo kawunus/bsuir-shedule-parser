@@ -1,10 +1,11 @@
 version: "3.9"
 
 services:
-  calendar-bot:
+  schedule-parser:
     build: .
-    container_name: google-calendar-parser
+    container_name: bsuir-schedule-parser
     volumes:
-      - ./credentials.json:/app/credentials.json:ro
-      - ./token.json:/app/token.json
+      - .:/app
+    environment:
+      - TZ=Europe/Minsk
     restart: unless-stopped
