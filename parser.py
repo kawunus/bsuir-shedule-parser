@@ -1,8 +1,9 @@
 from auth import get_service
 import asyncio
 from datetime import datetime, timezone
+from config import SOURCE_CALENDAR_ID 
 
-CALENDAR_ID = "494ee131891f8083b956f503604cd52858f2be874c0ef1b759f91b099e817c34@group.calendar.google.com"
+CALENDAR_ID = SOURCE_CALENDAR_ID
 
 def iso_today():
     return datetime.now(timezone.utc).isoformat()

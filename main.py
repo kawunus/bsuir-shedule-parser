@@ -3,10 +3,9 @@ from datetime import datetime, timezone
 from auth import get_service
 from parser import parse_schedule
 from insert_event import add_event
+from config import TARGET_CALENDAR_ID, UPDATE_INTERVAL, PAUSE_BETWEEN_REQUESTS
 
-CALENDAR_ID = "primary"
-UPDATE_INTERVAL = 86400
-PAUSE_BETWEEN_REQUESTS = 0.2
+CALENDAR_ID = TARGET_CALENDAR_ID
 
 
 def iso_today():
