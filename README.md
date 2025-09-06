@@ -18,11 +18,16 @@
 # Установка и запуск проекта
 ## 1. Получить кредиты от Google
 
-## 2. Запустить скрипт через...
-### ...Poetry
+## 2. Запустить скрипт
+Необходимо клонировать репозиторий на свою машину/сервер:
 ```
 git clone https://github.com/kawunus/bsuir-shedule-parser.git
 cd bsuir-shedule-parser
+```
+Дальше необходимо выбрать способ установки. Это можно сделать двумя путями:
+
+### Poetry
+```
 poetry install
 poetry run python main.py
 ```
